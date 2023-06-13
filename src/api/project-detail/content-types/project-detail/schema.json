@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_details",
+  "info": {
+    "singularName": "project-detail",
+    "pluralName": "project-details",
+    "displayName": "Project Details"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "opening_time": {
+      "type": "date",
+      "required": true
+    },
+    "closing_time": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

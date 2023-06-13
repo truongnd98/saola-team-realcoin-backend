@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "singularName": "transaction",
+    "pluralName": "transactions",
+    "displayName": "Transactions"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-detail.project-detail"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Minted"
+      ],
+      "required": true
+    }
+  }
+}
